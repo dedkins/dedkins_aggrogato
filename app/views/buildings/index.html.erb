@@ -1,0 +1,31 @@
+<h1>Buildings</h1>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Total square footage</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @buildings.each do |building| %>
+  <tr>
+    <td><%= link_to @building, building.address %></td>
+    <td><%= building.city %></td>
+    <td><%= building.state %></td>
+    <td><%= building.zip %></td>
+    <td><%= building.total_square_footage %></td>
+	<td><%= link_to 'Show', building %>
+    <td><%= link_to 'Edit', edit_building_path(building) %></td>
+    <td><%= link_to 'Delete', building, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Building', new_building_path %>

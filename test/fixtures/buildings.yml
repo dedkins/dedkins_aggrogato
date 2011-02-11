@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  address: MyString
+  city: MyText
+  state: MyText
+  zip: MyText
+  total_square_footage: 1
+
+two:
+  address: MyString
+  city: MyText
+  state: MyText
+  zip: MyText
+  total_square_footage: 1

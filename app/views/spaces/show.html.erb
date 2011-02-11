@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Suite:</b>
+  <%= @space.suite %>
+</p>
+
+<p>
+  <b>Square feet:</b>
+  <%= @space.square_feet %>
+</p>
+
+
+<%= link_to 'Edit', edit_space_path(@space) %> |
+<%= link_to 'Back', spaces_path %>

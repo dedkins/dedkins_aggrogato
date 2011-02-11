@@ -14,7 +14,7 @@
 
 <% @buildings.each do |building| %>
   <tr>
-    <td><%= link_to @building, building.address %></td>
+    <td><%= link_to building.address, building %></td>
     <td><%= building.city %></td>
     <td><%= building.state %></td>
     <td><%= building.zip %></td>

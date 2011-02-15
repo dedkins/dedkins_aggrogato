@@ -44,7 +44,7 @@ class BuildingsController < ApplicationController
 
     respond_to do |format|
       if @building.save
-        format.html { redirect_to(@building, :notice => 'Building was successfully created.') }
+        format.html { redirect_to(buildings_url, :notice => 'Building was successfully created.') }
         format.xml  { render :xml => @building, :status => :created, :location => @building }
       else
         format.html { render :action => "new" }

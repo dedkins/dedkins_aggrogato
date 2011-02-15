@@ -25,6 +25,13 @@
   <%= @building.total_square_footage %>
 </p>
 
+Comments
+<div id="spaces">
+	<%= render @building.spaces %>
+</div>
+
+<%= render :file => 'spaces/new'%>
+
 
 <%= link_to 'Edit', edit_building_path(@building) %> |
 <%= link_to 'Back', buildings_path %>

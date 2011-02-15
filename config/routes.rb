@@ -1,6 +1,7 @@
 Aggrogato::Application.routes.draw do
-  resources :buildings
-  resources :spaces
+  resources :buildings do
+  	resources :spaces
+  end
   
   
 

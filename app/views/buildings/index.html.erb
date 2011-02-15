@@ -1,12 +1,16 @@
-<h1>Buildings</h1>
-
 <table>
+
+<tr>
+	<th><h1>Buildings</h1></th>
+	<th id="notice" align="middle"><%= notice %></th>
+</tr>
+
   <tr>
     <th>Address</th>
     <th>City</th>
     <th>State</th>
-    <th>Zip</th>
-    <th>Total square footage</th>
+    <th>Spaces</th>
+    <th>Owner</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,9 +21,9 @@
     <td><%= link_to building.address, building %></td>
     <td><%= building.city %></td>
     <td><%= building.state %></td>
-    <td><%= building.zip %></td>
-    <td><%= building.total_square_footage %></td>
-	<td><%= link_to 'Show', building %>
+    <td><%= link_to '2', '#' %></td>
+    <td><%= link_to 'Joe Bob', '#' %></td>
+	<td><%= link_to 'Add Space', new_space_path.building %>
     <td><%= link_to 'Edit', edit_building_path(building) %></td>
     <td><%= link_to 'Delete', building, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

@@ -4,4 +4,6 @@ class Building < ActiveRecord::Base
   validates :state, :presence => true
   validates :zip, :presence => true
   
+  has_many :spaces
+  
 end
